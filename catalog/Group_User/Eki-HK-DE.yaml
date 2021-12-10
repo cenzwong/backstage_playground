@@ -1,0 +1,46 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: eki-hk-de
+  description: Ekimetrics Hong Kong Data Engineer Team
+spec:
+  type: team
+  profile:
+    displayName: Eki.HK.DE
+    email: team-b@example.com
+    picture: https://avatars.dicebear.com/api/identicon/team-b@example.com.svg?background=%23fff&margin=25
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: cenz.wong
+spec:
+  profile:
+    displayName: Cenz Wong
+    email: cenz.wong@ekimetrics.com
+    picture: https://media-exp1.licdn.com/dms/image/C5603AQEAYHlMc-2OCQ/profile-displayphoto-shrink_800_800/0/1638459732881?e=1644451200&v=beta&t=qu3r5nocSE6rGLIiBbQg0pJ6zb52WRKhzTIyAzGKat4
+  memberOf: [eki-hk-de]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: siddharth.jhanji
+spec:
+  profile:
+    displayName: Siddharth JHANJI
+    email: siddharth.jhanji@ekimetrics.com
+    picture: https://avatars.dicebear.com/api/avataaars/colette-brock@example.com.svg?background=%23fff
+  memberOf: [eki-hk-de]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: katherine.heung
+spec:
+  profile:
+    displayName: Katherine HEUNG
+    email: katherine.heung@ekimetrics.com
+    picture: https://avatars.dicebear.com/api/avataaars/jenny-doe@example.com.svg?background=%23fff
+  memberOf: [eki-hk-de]
